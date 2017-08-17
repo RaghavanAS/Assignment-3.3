@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <title>Assignment on Div and position</title>
+        <!-- HTML5 shim for IE8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+      <script src=“https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js”></script>
+    <![endif]-->
+<style type="text/css">
+.parentDiv{
+	position: relative;
+	height: 40px;
+	width: 200px;
+	background-color: black;
+	margin: 5%;
+}
+.childDiv{
+	position: absolute;
+	width: 300px;
+	height: 80px;
+    background-color: white;
+    display: none;
+    top: 45px;
+    left: 6px;
+}
+.dropDownButton{
+	position: absolute;
+display: inline-block;
+background-color: blue;
+width: 200px;
+height: 40px;
+font-size: 25px;
+}
+.parentDiv:hover .childDiv{
+	display: block;
+}
+</style>
+</head>
+<body>
+<!-- main section -->
+<main id="mainSection">
+<section id="firstSection">
+<div class="parentDiv">
+<button class="dropDownButton"> Hover me</button>
+	<div class="childDiv">
+	<h2>
+		This is  drop down button
+	</h2>
+	</div>
+</div>
+</section>
+<section id="secondSection">
+	<figure>
+  <img src="image1.jpg" alt="beautiful wood house" width="100%" height="70%">
+  <figcaption> A view of the wood house in Norway.</figcaption>
+	</figure>
+</section>
+</main>
+</body>
+</html>
